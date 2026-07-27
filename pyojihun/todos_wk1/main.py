@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, status
+from pydantic import BaseModel
 
 app: FastAPI = FastAPI() # Fastapi로의 메인 엔트리포인트
 
@@ -22,3 +23,18 @@ def read_items_handler(max_price: int | None = None): # 쿼리 파라미터는 �
     return {"max_price": max_price}
 #None=> Optional[int]과 동일. 즉, max_price는 int 또는 None이 될 수 있음.
 
+class Item(BaseModel): # Pydantic 모델 정의. FastAPI는 Pydantic 모델을 사용하여 요청 바디를 검증하고 직렬화함.
+    name: str
+    price: int
+    in_stock: bool = True
+
+#새 아이템 생성 엔드포인트 작성
+@app.post("/items", response_model=Item, status_code=status.HTTP_201_CREATED) # 요청 바디를 Pydantic 모델로 받음. type hinting을 통해 FastAPI는 요청 바디를 자동으로 파싱하고 검증함.
+def create_item_handler(item: Item): # 요청 바디를 Pydantic 모델로 받음. type hinting을 통해 FastAPI는 요청 바디를 자동으로 파싱하고 검증함.
+    return item
+
+@app.put("/items/{item_id}") #put 메서드로 아이템 업데이트 엔드포인트 작성
+def update_item_handler(item_id: int, assignee: str, item: Item): # 요청 바디를 Pydantic 모델로 받음. type hinting을 통해 FastAPI는 요청 바디를 자동으로 파싱하고 검증함.
+    return {"item_id": item_id,
+            "assignee": assignee,
+            "item": item}
