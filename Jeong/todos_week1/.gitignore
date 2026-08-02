@@ -1,0 +1,7 @@
+# 전체 무시
+*
+
+# 예외적으로 추적할 파일만 허용
+!main.py
+!schemas.py
+!.gitignore
