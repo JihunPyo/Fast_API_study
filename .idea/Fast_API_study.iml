@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/solution/source/todos7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/solution/todos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/solution/blog" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pyojihun" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="/opt/anaconda3/envs/fast" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
