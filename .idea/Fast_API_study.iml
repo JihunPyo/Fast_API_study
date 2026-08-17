@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Jeong/todos_week2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pyojihun/todos_week2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solution/source/todos3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solution/source/todos4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solution/source/todos5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solution/source/todos6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solution/source/todos7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solution/todos" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/solution/blog" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="/opt/anaconda3/envs/fast" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
