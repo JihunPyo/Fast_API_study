@@ -9,7 +9,7 @@ from schema.request import TodoCreateRequest, TodoUpdateRequest
 from schema.response import TodoResponse
 
 router = APIRouter(tags=["todos"])
-
+w
 #전체 할일 조회
 @router.get("/todos",response_model=list[TodoResponse],status_code=status.HTTP_200_OK)
 def get_todos_handler():

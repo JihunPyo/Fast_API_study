@@ -26,7 +26,7 @@ class Todo(Base):
         ForeignKey('user.id'),
         nullable=True,
     )
-    user: Mapped["User"] = relationship(
+    user: Mapped[User] = relationship(
         back_populates="todos",
     )
 
